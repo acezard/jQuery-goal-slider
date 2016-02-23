@@ -13,50 +13,50 @@ A lightweight jQuery plugin to animate a progress bar. This plugin is responsive
 Include script after the jQuery library:
 
 ```html
-<script type="text/javascript" src="/path/to/jquery-progress-bar.js"></script>
+<script type="text/javascript" src="/path/to/jquery-goal-slider.js"></script>
 ```
 Recommended : use the scss file and customize easily the settings.
 
 Alternatively you can include the css
 ```html
-<link rel="stylesheet" href="/path/to/jquery-progress-bar.css"></script>
+<link rel="stylesheet" href="/path/to/jquery-goal-slider.css"></script>
 ```
 
 ### Usage
 
-In order to use this plugin you have to follow the provided html template. Some elements are optional : `.jpb__motivational` and `.jpb__steps-container`. Replace the text content at your convenance in those two containers.
+In order to use this plugin you have to follow the provided html template. Some elements are optional : `.jgs__motivational` and `.jgs__steps-container`. Replace the text content at your convenance in those two containers.
 ```html
-<div class="jpb__container">
-    <div class="jpb__motivational">
+<div class="jgs__container">
+    <div class="jgs__motivational">
         Help us reach
         <br> our goals.
     </div>
-    <div class="jpb__image-container">
-        <div class="jpb__percentage-container">
-            <span class="jpb__percentage-value"></span>
+    <div class="jgs__image-container">
+        <div class="jgs__percentage-container">
+            <span class="jgs__percentage-value"></span>
         </div>
-        <div class="jpb__overlay-container">
-            <img class="jpb__overlay-image" src="OVERLAY IMAGE HERE">
+        <div class="jgs__overlay-container">
+            <img class="jgs__overlay-image" src="OVERLAY IMAGE HERE">
         </div>
-        <img class="jpb__image-base" src="ORIGINAL IMAGE HERE"/>
+        <img class="jgs__image-base" src="ORIGINAL IMAGE HERE"/>
     </div>
-    <div class="jpb__steps-container">
-        <div class="jpb__steps-highlighted"></div>
-        <div class="jpb__step">
-            <span class="jpb__sum-goal">250 000 €</span>
-            <span class="jpb__goal">Our first goal</span>
+    <div class="jgs__steps-container">
+        <div class="jgs__steps-highlighted"></div>
+        <div class="jgs__step">
+            <span class="jgs__sum-goal">250 000 €</span>
+            <span class="jgs__goal">Our first goal</span>
         </div>
-        <div class="jpb__step">
-            <span class="jpb__sum-goal">500 000 €</span>
-            <span class="jpb__goal">Our second goal</span>
+        <div class="jgs__step">
+            <span class="jgs__sum-goal">500 000 €</span>
+            <span class="jgs__goal">Our second goal</span>
         </div>
-        <div class="jpb__step">
-            <span class="jpb__sum-goal">750 000 €</span>
-            <span class="jpb__goal">Our third goal</span>
+        <div class="jgs__step">
+            <span class="jgs__sum-goal">750 000 €</span>
+            <span class="jgs__goal">Our third goal</span>
         </div>
-        <div class="jpb__step">
-            <span class="jpb__sum-goal">1 000 000 €</span>
-            <span class="jpb__goal">Our fourth goal</span>
+        <div class="jgs__step">
+            <span class="jgs__sum-goal">1 000 000 €</span>
+            <span class="jgs__goal">Our fourth goal</span>
         </div>
     </div>
 </div>
@@ -66,7 +66,7 @@ In order to use this plugin you have to follow the provided html template. Some 
 To init the plugin please do as follows :
 
 ```js
-$('.jpb__container').progressBar( { options } );
+$('.jgs__container').progressBar( { options } );
 ```
 
 ### Options
@@ -134,4 +134,4 @@ onComplete: function(){
 ## License
 
 MIT License
-(c) [Antonin Cezard](http://ie.linkedin.com/in/antonin-cezard/)
+(c) [Antonin Cezard](https://www.linkedin.com/in/antonin-cezard-04a7a4a3)
