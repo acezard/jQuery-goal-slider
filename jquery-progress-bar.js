@@ -4,7 +4,7 @@
   "use strict";
 
   // Create the defaults once
-  var pluginName = "progressBar",
+  var pluginName = "goalSlider",
     defaults = {
       easing: "easeOutCubic",
       percentage: 50,
@@ -34,7 +34,7 @@
     init: function() {
       var $self = this;
       var $elem = $(this.element);
-      $elem.find('.jpb__overlay-image').one('load', function() {
+      $elem.find('.jgs__overlay-image').one('load', function() {
         $self.setDegree();
         setTimeout(function() {
           $self.setText();
@@ -54,7 +54,7 @@
     },
     // Animating the image
     animateImage: function() {
-      var $target = $(this.element).find('.jpb__overlay-container');
+      var $target = $(this.element).find('.jgs__overlay-container');
       var offsetValue = (Math.tan(this.settings.slantDegree * (Math.PI / 180)) * 100);
       $({
         percentageValue: 100 + offsetValue
@@ -74,7 +74,7 @@
     },
     // Animating the bottom steps
     animateSteps: function() {
-      var $target = $(this.element).find('.jpb__steps-highlighted');
+      var $target = $(this.element).find('.jgs__steps-highlighted');
       var offsetValue = (Math.tan(this.settings.slantDegree * (Math.PI / 180)) * 100);
       $({
         percentageValue: 0 - offsetValue
@@ -92,8 +92,8 @@
     },
     // Animating the percentage circle
     animatePercentage: function() {
-      var $container = $(this.element).find('.jpb__percentage-container');
-      var $number = $(this.element).find('.jpb__percentage-value');
+      var $container = $(this.element).find('.jgs__percentage-container');
+      var $number = $(this.element).find('.jgs__percentage-value');
       var offsetValue = (Math.tan(this.settings.slantDegree * (Math.PI / 180)) * 100);
       $({
         percentageValue: 0
@@ -121,7 +121,7 @@
     },
     // Making the motivational text active
     setText: function() {
-      var $target = $(this.element).find('.jpb__motivational');
+      var $target = $(this.element).find('.jgs__motivational');
       $target.addClass('active');
     },
     // Setting skew degree and positions offsets
@@ -130,11 +130,11 @@
       var offsetValue = Math.tan(skewValue * (Math.PI / 180));
       var $elem = $(this.element);
       var containerWidth = $elem.outerWidth();
-      var circleWidth = $elem.find('.jpb__percentage-container').outerWidth();
-      var $skewedElems = $elem.find('.jpb__overlay-container, .jpb__step, .jpb__steps-highlighted');
-      var $unskewedElems = $elem.find('.jpb__overlay-image, .jpb__goal, .jpb__sum-goal');
-      var $overlayContainer = $elem.find('.jpb__overlay-container');
-      var $percentageContainer = $elem.find('.jpb__percentage-container');
+      var circleWidth = $elem.find('.jgs__percentage-container').outerWidth();
+      var $skewedElems = $elem.find('.jgs__overlay-container, .jgs__step, .jgs__steps-highlighted');
+      var $unskewedElems = $elem.find('.jgs__overlay-image, .jgs__goal, .jgs__sum-goal');
+      var $overlayContainer = $elem.find('.jgs__overlay-container');
+      var $percentageContainer = $elem.find('.jgs__percentage-container');
 
       $skewedElems.css('transform', 'skewX(-' + skewValue + 'deg)');
       $unskewedElems.css('transform', 'skewX(' + skewValue + 'deg)');
