@@ -2,6 +2,8 @@
 
 A lightweight jQuery plugin to animate a progress bar. This plugin is responsive.
 
+<img src="http://i.imgur.com/Osre53K.jpg" alt="">
+
 ### Demo page
 
 <a href="http://codepen.io/toplefty/full/xZoGEQ/">http://codepen.io/toplefty/full/xZoGEQ/</a>
