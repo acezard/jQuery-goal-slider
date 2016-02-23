@@ -1,4 +1,4 @@
-# jQuery Progress Bar
+# jQuery Goal Slider
 
 A lightweight jQuery plugin to animate a progress bar. This plugin is responsive.
 
