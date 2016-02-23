@@ -66,7 +66,7 @@ In order to use this plugin you have to follow the provided html template. Some 
 To init the plugin please do as follows :
 
 ```js
-$('.jgs__container').progressBar( { options } );
+$('.jgs__container').goalSlider( { options } );
 ```
 
 ### Options
