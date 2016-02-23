@@ -1,0 +1,119 @@
+.jpb__container {
+  position: relative;
+  transition: opacity 400ms ease;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  overflow: hidden;
+}
+.jpb__motivational {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  transition: 800ms ease opacity;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0;
+  z-index: 3;
+}
+@media screen and (max-width: 767px) {
+  .jpb__motivational {
+    font-size: 1.5rem;
+  }
+}
+.jpb__motivational.active {
+  opacity: 1;
+}
+.jpb__percentage-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  transform: translateY(-50%);
+  transition: opacity 200ms ease;
+  border-radius: 50%;
+  background: #e67e36;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .jpb__percentage-container {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+}
+.jpb__percentage-container.active {
+  opacity: 1;
+}
+.jpb__percentage-value {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+.jpb__image-container {
+  position: relative;
+}
+.jpb__overlay-container {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom;
+  overflow: hidden;
+}
+.jpb__overlay-image {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  transform-origin: bottom;
+}
+.jpb__image-base {
+  width: 100%;
+}
+.jpb__steps-container {
+  position: relative;
+  background: #4b4b4b;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .jpb__steps-container {
+    display: none;
+  }
+}
+.jpb__step {
+  position: relative;
+  width: 25%;
+  padding: 15px 0;
+  float: left;
+  transform-origin: top;
+  border-right: 2px solid #fff;
+  color: #fff;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.jpb__step:last-child {
+  border: 0;
+}
+.jpb__sum-goal {
+  display: block;
+  font-size: 2rem;
+}
+.jpb__goal {
+  display: block;
+  font-size: 1.4rem;
+}
+.jpb__steps-highlighted {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  transform-origin: top;
+  background: #e67e36;
+}
