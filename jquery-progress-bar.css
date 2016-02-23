@@ -1,4 +1,4 @@
-.jpb__container {
+.jgs__container {
   position: relative;
   transition: opacity 400ms ease;
   border-radius: 10px;
@@ -6,7 +6,7 @@
   opacity: 0;
   overflow: hidden;
 }
-.jpb__motivational {
+.jgs__motivational {
   position: absolute;
   top: 3%;
   right: 10%;
@@ -19,14 +19,14 @@
   z-index: 3;
 }
 @media screen and (max-width: 767px) {
-  .jpb__motivational {
+  .jgs__motivational {
     font-size: 1.5rem;
   }
 }
-.jpb__motivational.active {
+.jgs__motivational.active {
   opacity: 1;
 }
-.jpb__percentage-container {
+.jgs__percentage-container {
   display: flex;
   position: absolute;
   top: 50%;
@@ -43,24 +43,24 @@
   z-index: 2;
 }
 @media screen and (max-width: 767px) {
-  .jpb__percentage-container {
+  .jgs__percentage-container {
     width: 50px;
     height: 50px;
     margin-left: 50px;
   }
 }
-.jpb__percentage-container.active {
+.jgs__percentage-container.active {
   opacity: 1;
 }
-.jpb__percentage-value {
+.jgs__percentage-value {
   color: #fff;
   font-family: "Montserrat";
   font-size: 2rem;
 }
-.jpb__image-container {
+.jgs__image-container {
   position: relative;
 }
-.jpb__overlay-container {
+.jgs__overlay-container {
   position: absolute;
   right: 0;
   width: 100%;
@@ -68,27 +68,27 @@
   transform-origin: bottom;
   overflow: hidden;
 }
-.jpb__overlay-image {
+.jgs__overlay-image {
   position: absolute;
   right: 0;
   height: 100%;
   transform-origin: bottom;
 }
-.jpb__image-base {
+.jgs__image-base {
   width: 100%;
 }
-.jpb__steps-container {
+.jgs__steps-container {
   position: relative;
   background: #4b4b4b;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  .jpb__steps-container {
+  .jgs__steps-container {
     display: none;
   }
 }
-.jpb__step {
+.jgs__step {
   position: relative;
   width: 25%;
   padding: 15px 0;
@@ -99,18 +99,18 @@
   font-family: "Montserrat";
   text-align: center;
 }
-.jpb__step:last-child {
+.jgs__step:last-child {
   border: 0;
 }
-.jpb__sum-goal {
+.jgs__sum-goal {
   display: block;
   font-size: 2rem;
 }
-.jpb__goal {
+.jgs__goal {
   display: block;
   font-size: 1.4rem;
 }
-.jpb__steps-highlighted {
+.jgs__steps-highlighted {
   position: absolute;
   left: 0;
   height: 100%;
