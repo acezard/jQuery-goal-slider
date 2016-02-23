@@ -34,18 +34,23 @@
     init: function() {
       var $self = this;
       var $elem = $(this.element);
-      $self.setDegree();
-      setTimeout(function() {
-        $self.setText();
-      }, this.settings.delay / 2);
-      setTimeout(function() {
-        $self.animateImage();
-        $self.animatePercentage();
-        $self.animateSteps();
-      }, this.settings.delay);
-      setTimeout(function() {
-        $elem.css('opacity', '1');
-      }, 500);
+      $elem.find('.jpb__overlay-image').one('load', function() {
+        $self.setDegree();
+        setTimeout(function() {
+          $self.setText();
+        }, $self.settings.delay / 2);
+        setTimeout(function() {
+          $self.animateImage();
+          $self.animatePercentage();
+          $self.animateSteps();
+        }, $self.settings.delay);
+        setTimeout(function() {
+          $elem.css('opacity', '1');
+        });
+      }).each(function() {
+        if (this.complete) $(this).load();
+      });
+
     },
     // Animating the image
     animateImage: function() {
